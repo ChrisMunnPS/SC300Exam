@@ -2,11 +2,11 @@
 
 <p align="center">
   <strong>A complete, offline study kit for Microsoft Exam SC-300: Identity and Access Administrator.</strong><br>
-  113 scenario questions, an interactive exam engine, and a Pearson VUE–style score report.
+  159 scenario questions — including two full case studies — an interactive exam engine, and a Pearson VUE–style score report.
 </p>
 
 <p align="center">
-  <img alt="Questions: 113" src="https://img.shields.io/badge/questions-113-2563eb?style=flat-square">
+  <img alt="Questions: 159" src="https://img.shields.io/badge/questions-159-2563eb?style=flat-square">
   <img alt="Passing score: 700 of 1000" src="https://img.shields.io/badge/pass%20score-700%20%2F%201000-16a34a?style=flat-square">
   <img alt="Domains: 4" src="https://img.shields.io/badge/domains-4-7c3aed?style=flat-square">
   <img alt="Works offline" src="https://img.shields.io/badge/offline-ready-0ea5e9?style=flat-square">
@@ -18,10 +18,11 @@
 
 ## 📌 Executive summary
 
-**SC300Exam** is a self-contained practice exam for the Microsoft SC-300 certification. It turns the SC-300T00 Microsoft Learn material into 113 exam-style scenario questions, then gives you two ways to use them: a printable Markdown exam with a full answer key, or a browser-based simulator that times you, scores you, and reports your result the way the real exam does.
+**SC300Exam** is a self-contained practice exam for the Microsoft SC-300 certification. It turns the SC-300T00 Microsoft Learn material into 159 exam-style scenario questions, then gives you two ways to use them: a printable Markdown exam with a full answer key, or a browser-based simulator that times you, scores you, and reports your result the way the real exam does.
 
-- 🎯 **113 questions** weighted to the official blueprint across all four SC-300 domains.
-- 🧠 **Real exam feel** — scenario stems, 34 multiple-answer items scored all-or-nothing, 90 seconds per question.
+- 🎯 **159 questions** weighted to the official blueprint across all four SC-300 domains.
+- 🧩 **Two case studies** — Tailwind Traders and Woodgrove Financial — each with seven questions that share one long business scenario, mirroring the case-study blocks on the live exam.
+- 🧠 **Real exam feel** — scenario stems, 59 multiple-answer items scored all-or-nothing, 90 seconds per question.
 - 🎲 **Random 50-question attempt by default** — drawn from the bank in blueprint proportion, or type any question count you want.
 - 🧩 **Drill presets** — one click for Full 50, a single-domain drill, or a quick 10-question warm-up.
 - 🔁 **Spaced review queue** — questions you miss come back on a 3 / 7 / 21 / 45 / 90-day schedule.
@@ -69,15 +70,19 @@ The bank mirrors the published SC-300 skills outline so the score means somethin
 
 | # | Domain | Weight | Questions |
 |---|--------|:------:|:---------:|
-| 1 | Implement an identity management solution | 20–25% | 30 |
-| 2 | Implement an authentication and access management solution | 25–30% | 33 |
-| 3 | Implement access management for apps | 15–20% | 23 |
-| 4 | Plan and implement an identity governance strategy | 20–25% | 27 |
-| | **Total** | **100%** | **113** |
+| 1 | Implement and manage user identities | 20–25% | 38 |
+| 2 | Implement authentication and access management | 25–30% | 48 |
+| 3 | Plan and implement workload identities | 20–25% | 34 |
+| 4 | Plan and automate identity governance | 20–25% | 39 |
+| | **Total** | **100%** | **159** |
 
-**Question mix:** 79 single-best-answer scenarios and 34 multiple-answer items (pick two or three). Multi-select is graded all-or-nothing — every required letter must be selected, and nothing else.
+**Question mix:** 100 single-best-answer scenarios and 59 multiple-answer items (pick two or three). Multi-select is graded all-or-nothing — every required letter must be selected, and nothing else. Fourteen of the items belong to the two case studies: Q130–136 share the Tailwind Traders background and Q137–143 share the Woodgrove Financial background.
 
-**How an attempt is drawn:** the simulator picks a random 50-question exam by default, allocating 13 identity / 15 authentication / 10 apps / 12 governance so the mix tracks the blueprint. Change the number in the **Questions** box to draw any other size; the same proportions are applied and every selected section gets at least one question when the count allows. Ask for more than the bank holds and the attempt uses everything available. The bank itself runs slightly heavy in identity and apps compared with the weight ranges, but every attempt uses the exact blueprint split, so scores stay comparable.
+**How an attempt is drawn:** the simulator picks a random 50-question exam by default, allocating 12 user identities / 14 authentication / 12 workload identities / 12 governance so the mix tracks the October 28, 2026 weights. Change the number in the **Questions** box to draw any other size; the same proportions are applied and every selected section gets at least one question when the count allows. Ask for more than the bank holds and the attempt uses everything available. The bank itself runs slightly heavy in identity and authentication compared with the weight ranges, but every attempt uses the exact blueprint split, so scores stay comparable.
+
+### 🗓️ October 28, 2026 update
+
+Microsoft refreshed the English SC-300 outline on October 28, 2026. Most of it is unchanged; the update renames the four domains, raises **workload identities** from 15–20% to 20–25%, and makes minor wording changes to user authentication, Global Secure Access, and privileged access. This kit uses the new domain names and weights, a 12/14/12/12 default draw, and "emergency access accounts" terminology. [`00-EXAM-BLUEPRINT.md`](00-EXAM-BLUEPRINT.md) has the change summary and the objectives that are still thin.
 
 Every question is traceable to the Microsoft Learn unit it came from. The source module and unit are shown in the review, so a missed item tells you exactly what to reread.
 
@@ -115,13 +120,16 @@ Six one-click presets fill in the sections and question count:
 | Preset | Sections | Questions |
 |---|---|---|
 | Full 50 | All four | 50 |
-| Identity 10 | Identity management | 10 |
+| Identity 10 | User identities | 10 |
 | Auth 12 | Authentication & access | 12 |
-| Apps 8 | App access management | 8 |
+| Workload 8 | Workload identities | 8 |
 | Governance 10 | Identity governance | 10 |
 | Quick 10 | All four | 10 |
 
 A preset never starts the attempt by itself. It highlights when the current sections and count match, and you can edit either field afterwards for a custom mix.
+
+### 🧾 Case study drills
+The start screen lists both case studies with a **Start case** button. A drill runs that case's seven questions in order, switches shuffle off, and keeps the shared background open above every question so you can reread the business requirements without leaving the item. The same background panel appears during the answer review, and **Print full review** prints it once, before the first question of the case.
 
 ### 🔁 Spaced review queue
 Every question you miss — including anything left unanswered — is added to a local review queue and is due immediately. Reviewing it correctly moves it through **3, 7, 21, 45, and 90-day** intervals; after the last interval it graduates out of the queue. Answers are graded all-or-nothing, and a wrong review resets the item to due now.
@@ -183,13 +191,13 @@ SC300Exam/
 ├── README.md                 ← you are here
 ├── LICENSE                   ← MIT
 ├── 00-EXAM-BLUEPRINT.md      ← domain weights, question mix, how to use the kit
-├── 01-PRACTICE-EXAM.md       ← 113 questions, no answers
+├── 01-PRACTICE-EXAM.md       ← 159 questions, no answers
 ├── 02-ANSWER-KEY.md          ← answers, reasoning, distractor analysis, sources
 ├── 03-SCORE-SHEET.md         ← per-domain scoring and remediation map
-├── 04-CHEAT-SHEET-IDENTITY.md ← one-page identity refresher
+├── 04-CHEAT-SHEET-IDENTITY.md ← one-page user identities refresher
 ├── 05-CHEAT-SHEET-AUTH.md    ← one-page authentication refresher
-├── 06-CHEAT-SHEET-APPS.md    ← one-page app access refresher
-├── 07-CHEAT-SHEET-GOVERNANCE.md ← one-page governance refresher
+├── 06-CHEAT-SHEET-APPS.md    ← one-page workload identities refresher
+├── 07-CHEAT-SHEET-GOVERNANCE.md ← one-page identity governance refresher
 ├── 08-CHEAT-SHEETS.html      ← four-page A4 print pack (all cheat sheets)
 ├── tools/
 │   └── build-cheat-sheets.mjs ← rebuilds 08 from the Markdown sources
@@ -197,7 +205,7 @@ SC300Exam/
     ├── index.html            ← simulator shell
     ├── styles.css            ← layout, themes, print styles
     ├── app.js                ← state, timer, scoring, review, persistence
-    ├── questions.js          ← generated bank (window.QUESTIONS)
+    ├── questions.js          ← generated bank (window.CASE_STUDIES + window.QUESTIONS)
     └── README.md             ← simulator-specific notes
 ```
 
@@ -210,12 +218,12 @@ The numbered documents are the paper version of the exam and still work on their
 | File | What it is for |
 |---|---|
 | **`00-EXAM-BLUEPRINT.md`** | The blueprint: domain weights, question counts, source snapshot, and a four-step study method. |
-| **`01-PRACTICE-EXAM.md`** | All 113 questions, numbered and grouped by domain, with no answers. Print it or read it closed-book. |
+| **`01-PRACTICE-EXAM.md`** | All 159 questions, numbered and grouped by domain, with no answers. Print it or read it closed-book. |
 | **`02-ANSWER-KEY.md`** | The correct letter(s), the reasoning, why each remaining option fails, and the Microsoft Learn unit to review. |
 | **`03-SCORE-SHEET.md`** | A fill-in sheet that turns your raw score into a per-domain percentage with a remediation list. |
 | **`04`–`07` cheat sheets** | One dense page per domain: the facts, role names, limits, and exam traps most likely to be tested. |
 
-A sensible loop: read the domain cheat sheet → sit `01` closed-book at the 113-minute pace → mark it with `02` → fill in `03` → reread only the units behind the domains under 80% → retry the missed questions through the simulator's spaced-review queue.
+A sensible loop: read the domain cheat sheet → sit `01` closed-book at the 159-minute pace → mark it with `02` → fill in `03` → reread only the units behind the domains under 80% → retry the missed questions through the simulator's spaced-review queue.
 
 ---
 
@@ -227,6 +235,7 @@ A sensible loop: read the domain cheat sheet → sit `01` closed-book at the 113
 {
   id: 1,
   domain: 'identity',          // identity | auth | apps | governance
+  case: 'tailwind-traders',    // optional; links to window.CASE_STUDIES
   topic: 'Administrative units',
   stem: 'Scenario text…\n\nWhat should you create?',
   options: [{ letter: 'A', text: '…' }, …],
@@ -237,6 +246,8 @@ A sensible loop: read the domain cheat sheet → sit `01` closed-book at the 113
 ```
 
 Keep `answers` consistent with the stem: "Choose two" must have exactly two letters, because scoring compares the selection length to `answers.length` before checking the letters. The review, score report, and print output all read from this same file.
+
+Case-study backgrounds live in a separate `window.CASE_STUDIES` array in the same file, so a long scenario is stored once and shared by every question that names its `case` id.
 
 ---
 
@@ -278,6 +289,7 @@ Ideas for the next revision of the bank, grouped by the SC-300 objective they st
 - [x] Purge protection and soft-delete recovery for groups and apps
 - [x] Per-domain drill presets and a spaced-repetition queue in the simulator
 - [x] A printable one-page "cheat sheet" per domain
+- [x] Two case studies with shared business backgrounds and guided drills
 
 Contributions, corrections, and new questions are welcome — please keep the stem, answer key, and `questions.js` entry consistent.
 
@@ -300,5 +312,5 @@ Released under the [MIT License](https://github.com/ChrisMunnPS/SC300Exam/blob/m
 ---
 
 <p align="center">
-  <sub>Built from the Microsoft Learn SC-300T00 archive · 4 learning paths · 18 modules · 194 units · snapshot 2026-11-06</sub>
+  <sub>Built from the Microsoft Learn SC-300T00 archive · 4 learning paths · 18 modules · 194 units · snapshot 2026-11-08</sub>
 </p>
