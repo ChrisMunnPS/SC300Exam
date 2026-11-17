@@ -31,6 +31,7 @@
 - 📊 **Actionable results** — scaled score out of 1,000, 700 to pass, per-section breakdown, and a review that explains every distractor.
 - 🎛️ **Your attempt, your rules** — focus on specific sections, switch the timer off, or practise with instant feedback.
 - 🎆 **Celebrate the pass** — a five-second fireworks overlay on a passing score.
+- 📝 **Test practice exam** - [Exam Simulator](https://chrismunnps.github.io/exam-sim/)
 
 ### Start here
 
